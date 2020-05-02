@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>weather</title>
+    <link rel="stylesheet" href="../assets/css/settings.css" />
+    <script defer src="js/settings.js"></script>
+  </head>
+  <body>
+    <h1>Hello!</h1>
+    <h2>Welcome to this weather app</h2>
+
+    <div class="label">customize your options:</div>
+
+    <div class="autocomplete">
+      <input id="city" type="text" name="myCountry" placeholder="Select city" />
+    </div>
+    <hr />
+    <div class="temp">
+      <div class="fahrenheit">
+        <input
+          type="radio"
+          name="measure"
+          value="imperial"
+          onclick="setTempMeasure(this.value)"
+        /><label> Fahrenheit</label>
+      </div>
+      <div class="celsius">
+        <input
+          type="radio"
+          name="measure"
+          value="metric"
+          checked
+          onclick="setTempMeasure(this.value)"
+        /><label> Celsius</label>
+      </div>
+    </div>
+    <button onclick="storeData()">SUBMIT</button>
+
+    <div class="github" onclick="openGithub()">
+      See my projects <img src="../assets/UI/github.svg" alt="github" />
+    </div>
+  </body>
+</html>

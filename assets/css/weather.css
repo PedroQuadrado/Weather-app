@@ -1,0 +1,237 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    user-select: none;
+}
+body {
+    background: url(../background/0.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    back
+}
+/*settings*/
+.settings{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 10px 0 0;
+}
+.settings img {
+    width: 25px;
+    height: 25px;
+}
+.settings img:hover {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+
+/*top left section*/
+.left-section {
+    display: flex;
+}
+.left-section .current-ico {
+    width: 200px;
+    margin-right: 10px;
+}
+.left-section .temp {
+    display: flex;
+}
+.left-section h1 {
+    color: #dae1e7;
+    font-size: 100px;
+    line-height: 100px;
+}
+.left-section .unit {
+    color: #dae1e7;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 6px;
+}
+.left-section .description {
+    color: #dae1e7;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+.left-section .sensation{
+    display: flex;
+    color: #dae1e7;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.left-section .info {
+    display: flex;
+    flex-direction: column;
+}
+
+/*top right section*/
+.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.right-section .clock {
+    font-size: 3.5rem;
+    color: #dae1e7;
+    font-weight: 700;
+}
+.right-section .date {
+    color: #dae1e7;
+    font-size: 2rem;
+    text-align: right;
+}
+.right-section .location {
+    color: #dae1e7;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    text-align: right;
+}
+.right-section .sun {
+    color: #dae1e7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 260px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.right-section .sun img {
+    width: 40px;
+}
+
+/*main section*/
+main {
+    padding: 0 50px 0 100px;
+    color: #dae1e7;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+main .info {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+main .info img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/*footer*/
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 250px;
+    width: 100%;
+    padding: 10px;
+    background-color: #27496d;
+    display: flex;
+}
+
+/*footer left section*/
+footer .left-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+footer .left-section .row {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 2px solid #dae1e7;
+    color: #dae1e7;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+footer .left-section .row:last-child{
+    border-bottom: none;    
+}
+footer .left-section .temp-info {
+    display: flex;
+    align-items: center;
+}
+footer .left-section .temp-info img {
+    height: 35px;
+    width: 35px;
+    padding: 3px;
+    margin: 0 0 0 20px;
+}
+
+/*footer right section*/
+footer .right {
+    flex: 2;
+    display: flex;
+}
+footer .right .box {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-left: 2px solid #dae1e7;
+}
+footer .right .box img{
+    width: 120px;
+    height: 120px;
+}
+footer .right .box .day {
+    background-color: #142850;
+    width: 100px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dae1e7;
+    border-radius: 20px;
+}
+footer .right .box .max-min{
+    color: #dae1e7;
+}
+
+/* width correction*/
+@media only screen and (max-width: 1100px) {
+    header{
+        padding: 10px 25px;
+    }
+    main {
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    header .right-section {
+        display: none;
+    }
+    footer .left-section .row {
+        padding: 0 5px;
+    }
+    footer .left-section .temp-info img {
+        margin-left: 5px;
+    }
+    footer .right .box img{
+        width: 100px;
+        height: 100px;
+        margin: 0 5px;
+        padding: 5px;
+    }
+}
+/* height correction*/
+@media only screen and (max-height: 850px) {
+    main {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 50px;
+    }
+    
+}

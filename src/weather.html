@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/weather.css" />
+    <script defer src="js/weather.js"></script>
+    <title>Weather</title>
+  </head>
+  <body id="body">
+    <div id="content" style="display: none; height: 100%; width: 100%;">
+      <div class="settings">
+        <img onclick="goToSettings()" src="../assets/UI/settings.svg" alt="" />
+      </div>
+      <header>
+        <div class="left-section">
+          <img
+            src="../assets/icons/01d.svg"
+            class="current-ico"
+            id="currentLogo"
+          />
+          <div class="info">
+            <div class="temp">
+              <h1 id="currentTemp"><!----></h1>
+              <div class="small">
+                <div class="unit" id="unit"><!----></div>
+                <div class="description" id="currentDescription"><!----></div>
+                <div class="sensation">
+                  Sensation:&nbsp;
+                  <div class="value" id="currentSensation"><!----></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-section">
+          <div class="clock" id="clock"><!----></div>
+          <div class="date" id="date"><!----></div>
+          <div class="location" id="location"><!----></div>
+          <div class="sun">
+            <img src="../assets/UI/sunrise.svg" alt="" />
+            <div class="sunrise" id="sunrise"><!----></div>
+            &nbsp;/&nbsp;
+            <img src="../assets/UI/sunset.svg" alt="" />
+            <div class="sunset" id="sunset"><!----></div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="info">
+          <img src="../assets/UI/temp0.svg" alt="" />
+          <div id="todayMin"><!----></div>
+        </div>
+
+        <div class="info">
+          <img src="../assets/UI/temp3.svg" alt="" />
+          <div id="todayMax"><!----></div>
+        </div>
+
+        <div class="info">
+          <img src="../assets/UI/windspeed.svg" alt="windspeed" />
+          <div id="todayWindSpeed"><!----></div>
+        </div>
+
+        <div class="info">
+          <img src="../assets/UI/Wnorth.svg" alt="" id="WindIco" />
+          <div id="todayWindDirection"><!----></div>
+        </div>
+
+        <div class="info">
+          <img src="../assets/UI/uv.svg" alt="" />
+          <div id="todayUV"><!----></div>
+        </div>
+      </main>
+      <footer>
+        <div class="left-section" id="leftSection">
+          <!--
+        <div class="row">
+          <div class="time">14:00</div>
+          <div class="temp-info">
+            <div class="temp">12º</div>
+            <img src="../assets/icons/01d.svg" alt="" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="time">14:00</div>
+          <div class="temp-info">
+            <div class="temp">12º</div>
+            <img src="../assets/icons/09d.svg" alt="" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="time">14:00</div>
+          <div class="temp-info">
+            <div class="temp">12º</div>
+            <img src="../assets/icons/10n.svg" alt="" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="time">14:00</div>
+          <div class="temp-info">
+            <div class="temp">12º</div>
+            <img src="../assets/icons/11n.svg" alt="" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="time">14:00</div>
+          <div class="temp-info">
+            <div class="temp">12º</div>
+            <img src="../assets/icons/13n.svg" alt="" />
+          </div>
+        </div>
+        --></div>
+
+        <!--footer right section-->
+        <div class="right" id="rightSection">
+          <!--
+        <div class="box">
+          <div class="day">mon</div>
+          <img src="../assets/icons/01d.svg" alt="" />
+          <div class="max-min">
+            18-10
+          </div>
+        </div>
+        <div class="box">
+          <div class="day">mon</div>
+          <img src="../assets/icons/02d.svg" alt="" />
+          <div class="max-min">
+            18-10
+          </div>
+        </div>
+        <div class="box">
+          <div class="day">mon</div>
+          <img src="../assets/icons/03d.svg" alt="" />
+          <div class="max-min">
+            18-10
+          </div>
+        </div>
+        <div class="box">
+          <div class="day">mon</div>
+          <img src="../assets/icons/04d.svg" alt="" />
+          <div class="max-min">
+            18-10
+          </div>
+        </div>
+        <div class="box">
+          <div class="day">mon</div>
+          <img src="../assets/icons/50n.svg" alt="" />
+          <div class="max-min">
+            18-10
+          </div>
+        </div>
+    -->
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
